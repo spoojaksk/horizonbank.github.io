@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 16, 2021 at 01:02 PM
+-- Generation Time: Jun 18, 2021 at 10:27 AM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.6
 
@@ -40,16 +40,16 @@ CREATE TABLE `cust_det` (
 --
 
 INSERT INTO `cust_det` (`sno`, `name`, `Email`, `Phone No`, `Balance`) VALUES
-(1, 'Mark Maayandi', 'markmaayandi@gmail.com', '9940000001', 61314),
-(2, 'Muniyamma', 'muniyamma1211@gmail.com', '9940032145', 42069),
-(3, 'Steve Wague', 'stevewague@yahoo.com', '9874654568', 985090),
-(4, 'Child Chinna', 'childchinna@outlook.com', '9877546478', 875640),
-(5, 'Motta Rajendran', 'motta19rajendran@gmail.com', '8795463127', 88475),
-(6, 'Jack Dawson', 'jacktitanic@gmail.com', '7569846321', 1200),
-(7, 'Rose DeWitt Bukater', 'rosejacktitanic@gmail.com', '9875756985', 904654),
-(8, 'Rick Sanchez', 'picklerick@gmail.com', '9875756984', 7986540),
-(9, 'Tun Tun', 'tuntunladoos@outlook.com', '6874563125', 62500),
-(10, 'Sasuke Uchiha', 'sasuke25sharingan@gmail.com', '9876543210', 987654);
+(1, 'Adhi', 'adhi1211@gmail.com', '9875643210', 5000000),
+(2, 'Samantha', 'samsam11@yahoo.com', '6587945632', 569840),
+(3, 'Sasi Kumar', 'sasikumar@gmail.com', '7896541230', 87860),
+(4, 'Trisha', 'trisha@outlook.com', '6549871230', 7500),
+(5, 'Mohammed Ali', 'mohammedali@gmail.com', '7896654123', 5000),
+(6, 'Yamini Sri Devi', 'minidevi@yahoo.com', '8745321900', 33000),
+(7, 'Uma', 'uma@gmail.com', '7789456123', 35000),
+(8, 'Rajesh', 'rajesh@yahoo.com', '8879654132', 50000),
+(9, 'Grace', 'graceaunty@gmail.com', '665412397', 500),
+(10, 'Thomas Shelby', 'Shelbybusiness@gmail.com', '999999991', 50000000);
 
 -- --------------------------------------------------------
 
@@ -63,16 +63,6 @@ CREATE TABLE `trans_his` (
   `amount` int(11) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `trans_his`
---
-
-INSERT INTO `trans_his` (`sender`, `receiver`, `amount`, `date`) VALUES
-('Mark Maayandi', 'Steve Wague', 435, '2021-06-15 13:50:01'),
-('Steve Wague', 'Rose DeWitt Bukater', 5654, '2021-06-15 13:50:20'),
-('Mark Maayandi', 'Tun Tun', 500, '2021-06-15 13:50:38'),
-('Mark Maayandi', 'Steve Wague', 568, '2021-06-15 14:20:25');
 
 --
 -- Indexes for dumped tables
